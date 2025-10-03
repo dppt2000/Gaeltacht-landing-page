@@ -4,68 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Coming Soon · Gaeltacht Type</title>
-    <meta name="description" content="New work launching soon. Portfolio and research hub by Dominic." />
+    <meta name="description" content="Type foundry site launching soon." />
 
-    <!-- Open Graph / Twitter for nicer shares -->
-    <meta property="og:title" content="Gaeltacht Type Foundry — Coming Soon" />
-    <meta property="og:description" content="New work launching soon. Portfolio and research hub." />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Gaeltacht Type — Coming Soon" />
+    <meta property="og:description" content="Type foundry site launching soon." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <style>
-      :root{
-        --bg: #0b0b0b;
-        --fg: #e8e8e8;
-        --sub: #a9a9a9;
-        --accent: #7ef3c3;
-        --grid:#1a1a1a;
-      }
-      *,*::before,*::after{box-sizing:border-box}
-      html,body{height:100%}
-      body{margin:0; background:radial-gradient(1200px 800px at 20% 10%, #111 0%, #0b0b0b 55%, #080808 100%); color:var(--fg); font:400 16px/1.5 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif;}
-      .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
-      .card{width:min(720px,100%); background:rgba(20,20,20,0.5); border:1px solid #222; border-radius:24px; padding:36px; box-shadow:0 20px 60px rgba(0,0,0,0.5); position:relative; overflow:hidden}
-      .glow{position:absolute; inset:-40%; background:radial-gradient(40% 40% at 60% 20%, rgba(126,243,195,0.08), transparent 60%),
-                                radial-gradient(30% 30% at 20% 80%, rgba(126,243,195,0.06), transparent 60%);
-             filter:blur(30px); pointer-events:none}
-      h1{font-weight:700; letter-spacing:-0.01em; line-height:1.1; margin:0 0 10px; font-size:clamp(28px,4vw,44px)}
-      p{margin:0 0 14px; color:var(--sub)}
-      .tag{display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#0b0b0b; background:var(--accent); border-radius:999px; padding:6px 12px; font-weight:700}
-      .row{display:flex; flex-wrap:wrap; gap:14px; margin-top:20px}
-      .input{flex:1 1 260px; min-width:220px; background:#121212; border:1px solid #222; color:var(--fg); border-radius:14px; padding:12px 14px; outline:none}
-      .btn{flex:0 0 auto; border:1px solid #2a2a2a; background:#151515; color:var(--fg); padding:12px 18px; border-radius:14px; cursor:pointer; transition:transform .05s ease, background .2s}
-      .btn:hover{background:#191919}
-      .btn:active{transform:translateY(1px)}
-      .links{display:flex; gap:14px; margin-top:18px}
-      .link{color:var(--fg); text-decoration:none; border:1px solid #242424; padding:10px 12px; border-radius:12px; font-size:14px}
-      .grid{position:absolute; inset:0; background-image:linear-gradient(transparent 23px, var(--grid) 24px), linear-gradient(90deg, transparent 23px, var(--grid) 24px); background-size:24px 24px; mask:linear-gradient(#000, transparent 60%)}
-      footer{opacity:0.65; font-size:12px; margin-top:24px}
-      .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace; font-size:12px; color:#bdbdbd}
-      /* Responsive tweak */
-      @media (max-width:520px){ .card{padding:26px; border-radius:20px} }
-    </style>
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="wrap">
       <section class="card" role="region" aria-label="Coming soon">
         <div class="grid" aria-hidden="true"></div>
         <div class="glow" aria-hidden="true"></div>
+
         <span class="tag">Coming soon</span>
-        <h1>Dominic — graphic design & design research</h1>
+        <h1>Gaeltacht Type — graphic design & design research</h1>
         <p>Portfolio refresh is in progress. New work, process notes, and research will land here shortly.</p>
+
         <div class="row" role="group" aria-label="Contact">
-          <!-- Replace the mailto with your email -->
           <a class="btn" href="mailto:hello@example.com?subject=Keep%20me%20posted">Email me</a>
           <a class="btn" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
           <a class="btn" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+
         <div class="links">
           <a class="link" href="/press-kit.pdf">Press kit</a>
           <a class="link" href="/resume.pdf">Resume</a>
         </div>
+
         <footer>
-          <div class="mono">© <span id="y"></span> Dominic. All rights reserved.</div>
+          <div class="mono">© <span id="y"></span> Gaeltacht Type. All rights reserved.</div>
         </footer>
       </section>
     </main>
