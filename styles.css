@@ -6,6 +6,14 @@
   --grid:#1a1a1a;
 }
 
+@font-face {
+    font-family: AnoisDealg;
+    src: url("../Gaeltacht-landing-page
+/AnoisDealgSans-Black.otf") format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -36,7 +44,7 @@ body{
   pointer-events:none;
 }
 
-h1{font-weight:700; letter-spacing:-0.01em; line-height:1.1; margin:0 0 10px; font-size:clamp(28px,4vw,44px)}
+h1{font-family:AnoisDealg; font-weight:900; letter-spacing:-0.01em; line-height:1.1; margin:0 0 10px; font-size:clamp(28px,4vw,44px)}
 p{margin:0 0 14px; color:var(--sub)}
 .tag{
   display:inline-flex; align-items:center; gap:8px;
@@ -80,11 +88,4 @@ Posted by FSocko, modified by community. See post 'Timeline' for change history
 Retrieved 2026-02-03, License - CC BY-SA 3.0
 -->
 
-@font-face {
-    font-family: F16;
-    src: url("../Gaeltacht-landing-page
-/F16_Panel Font.ttf") format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
