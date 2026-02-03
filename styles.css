@@ -16,10 +16,7 @@ body{
 }
 @font-face {
     font-family: AnoisDealg;
-    src: url("../Gaeltacht-landing-page
-/AnoisDealgSans-Black.woff") format('woff');
-    font-weight: 900;
-    font-style: normal;
+    src: url("../Gaeltacht-landing-page/AnoisDealgSans-Black.woff") format('woff');
 }
 
 .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
@@ -43,7 +40,13 @@ body{
   pointer-events:none;
 }
 
-h1{font-family:AnoisDealg; font-weight:900; letter-spacing:-0.01em; line-height:1.1; margin:0 0 10px; font-size:clamp(28px,4vw,44px)}
+h1{font-family: AnoisDealg;
+   font-weight:900;
+   letter-spacing:-0.01em;
+   line-height:1.1;
+   margin:0 0 10px;
+   font-size:clamp(28px,4vw,44px)}
+
 p{margin:0 0 14px; color:var(--sub)}
 .tag{
   display:inline-flex; align-items:center; gap:8px;
