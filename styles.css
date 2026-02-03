@@ -6,21 +6,25 @@
   --grid:#1a1a1a;
 }
 
-
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%}
+
+@font-face{
+  font-family:"AnoisDealg";
+  src:url("fonts/AnoisDealgSans-Black.woff") format("woff");
+  font-weight:900;
+  font-style:normal;
+}
+
 body{
   margin:0;
   background:radial-gradient(1200px 800px at 20% 10%, #111 0%, #0b0b0b 55%, #080808 100%);
   color:var(--fg);
   font:400 16px/1.5 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif;
 }
-@font-face {
-    font-family: AnoisDealg;
-    src: url("https://github.com/dppt2000/Gaeltacht-landing-page/blob/eaa56e677bf49ae7a3cd3626b574d3c49cdbd8ec/AnoisDealgSans-Black.woff") format('woff');
-}
 
 .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
+
 .card{
   width:min(720px,100%);
   background:rgba(20,20,20,0.5);
@@ -41,38 +45,71 @@ body{
   pointer-events:none;
 }
 
-h1{font-family: AnoisDealg;
-   font-weight:900;
-   letter-spacing:-0.01em;
-   line-height:1.1;
-   margin:0 0 10px;
-   font-size:clamp(28px,4vw,44px)}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:#0b0b0b;
+  background:var(--accent);
+  border-radius:999px;
+  padding:6px 12px;
+  font-weight:700;
+}
+
+h1{
+  font-family:"AnoisDealg", system-ui, -apple-system, Segoe UI, Inter, Roboto, Helvetica, Arial, sans-serif;
+  font-weight:900;
+  letter-spacing:-0.01em;
+  line-height:1.1;
+  margin:0 0 10px;
+  font-size:clamp(28px,4vw,44px);
+}
 
 p{margin:0 0 14px; color:var(--sub)}
-.tag{
-  display:inline-flex; align-items:center; gap:8px;
-  font-size:12px; letter-spacing:0.12em; text-transform:uppercase;
-  color:#0b0b0b; background:var(--accent);
-  border-radius:999px; padding:6px 12px; font-weight:700;
-}
+
 .row{display:flex; flex-wrap:wrap; gap:14px; margin-top:20px}
+
 .input{
-  flex:1 1 260px; min-width:220px; background:#121212; border:1px solid #222;
-  color:var(--fg); border-radius:14px; padding:12px 14px; outline:none;
+  flex:1 1 260px;
+  min-width:220px;
+  background:#121212;
+  border:1px solid #222;
+  color:var(--fg);
+  border-radius:14px;
+  padding:12px 14px;
+  outline:none;
 }
+
 .btn{
-  flex:0 0 auto; border:1px solid #2a2a2a; background:#151515; color:var(--fg);
-  padding:12px 18px; border-radius:14px; cursor:pointer;
+  flex:0 0 auto;
+  border:1px solid #2a2a2a;
+  background:#151515;
+  color:var(--fg);
+  padding:12px 18px;
+  border-radius:14px;
+  cursor:pointer;
   transition:transform .05s ease, background .2s;
-  text-decoration:none; display:inline-block;
+  text-decoration:none;
+  display:inline-block;
 }
+
 .btn:hover{background:#191919}
 .btn:active{transform:translateY(1px)}
+
 .links{display:flex; gap:14px; margin-top:18px}
+
 .link{
-  color:var(--fg); text-decoration:none; border:1px solid #242424;
-  padding:10px 12px; border-radius:12px; font-size:14px;
+  color:var(--fg);
+  text-decoration:none;
+  border:1px solid #242424;
+  padding:10px 12px;
+  border-radius:12px;
+  font-size:14px;
 }
+
 .grid{
   position:absolute; inset:0;
   background-image:
@@ -81,14 +118,21 @@ p{margin:0 0 14px; color:var(--sub)}
   background-size:24px 24px;
   mask:linear-gradient(#000, transparent 60%);
 }
-footer{opacity:0.65; font-size:12px; margin-top:24px}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,monospace; font-size:12px; color:#bdbdbd}
-@media (max-width:520px){ .card{padding:26px; border-radius:20px} }
 
-<!--
+footer{opacity:0.65; font-size:12px; margin-top:24px}
+
+.mono{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,monospace;
+  font-size:12px;
+  color:#bdbdbd;
+}
+
+@media (max-width:520px){
+  .card{padding:26px; border-radius:20px}
+}
+
+/*
 Source - https://stackoverflow.com/a/38100854
 Posted by FSocko, modified by community. See post 'Timeline' for change history
 Retrieved 2026-02-03, License - CC BY-SA 3.0
--->
-
-
+*/
