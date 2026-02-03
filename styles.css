@@ -6,6 +6,7 @@
   --grid:#1a1a1a;
 }
 
+
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -16,7 +17,7 @@ body{
 }
 @font-face {
     font-family: AnoisDealg;
-    src: url("../../Gaeltacht-landing-page/AnoisDealgSans-Black.woff") format('woff');
+    src: url("https://github.com/dppt2000/Gaeltacht-landing-page/blob/eaa56e677bf49ae7a3cd3626b574d3c49cdbd8ec/AnoisDealgSans-Black.woff") format('woff');
 }
 
 .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
