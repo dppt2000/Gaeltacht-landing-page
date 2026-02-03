@@ -6,14 +6,6 @@
   --grid:#1a1a1a;
 }
 
-@font-face {
-    font-family: AnoisDealg;
-    src: url("../Gaeltacht-landing-page
-/AnoisDealgSans-Black.otf") format('opentype');
-    font-weight: 900;
-    font-style: normal;
-}
-
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -21,6 +13,13 @@ body{
   background:radial-gradient(1200px 800px at 20% 10%, #111 0%, #0b0b0b 55%, #080808 100%);
   color:var(--fg);
   font:400 16px/1.5 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif;
+}
+@font-face {
+    font-family: AnoisDealg;
+    src: url("../Gaeltacht-landing-page
+/AnoisDealgSans-Black.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
 
 .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
