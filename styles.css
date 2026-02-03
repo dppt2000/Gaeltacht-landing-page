@@ -61,6 +61,11 @@ body{
 
 h1{
   font-family:"AnoisDealg", system-ui, -apple-system, Segoe UI, Inter, Roboto, Helvetica, Arial, sans-serif;
+    /* high-level */
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* low-level override */
+  font-feature-settings: "dlig" 1;
   font-weight:900;
   letter-spacing:-0.01em;
   line-height:1.1;
