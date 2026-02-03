@@ -16,7 +16,7 @@ body{
 }
 @font-face {
     font-family: AnoisDealg;
-    src: url("../Gaeltacht-landing-page/AnoisDealgSans-Black.woff") format('woff');
+    src: url("../../Gaeltacht-landing-page/AnoisDealgSans-Black.woff") format('woff');
 }
 
 .wrap{min-height:100%; display:grid; place-items:center; padding:56px 20px}
